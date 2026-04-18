@@ -1,0 +1,46 @@
+/* style.css */
+/* Styles Diekstrak dari Semua File HTML */
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+body { font-family: 'Inter', sans-serif; }
+h1, h2, h3, .font-headline, .headline { font-family: 'Manrope', sans-serif; }
+
+.bg-industrial-overlay {
+    background-blend-mode: overlay;
+    background-color: rgba(0, 30, 64, 0.85);
+}
+.iceberg-gradient {
+    background: linear-gradient(180deg, #e0f2fe 0%, #0ea5e9 40%, #001e40 100%);
+}
+
+/* Animasi & Transisi Kustom */
+.reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal-on-scroll.is-revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+.delay-100 { transition-delay: 100ms; }
+.delay-200 { transition-delay: 200ms; }
+.delay-300 { transition-delay: 300ms; }
+
+.nav-link-hover {
+    position: relative;
+}
+.nav-link-hover::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #ea8000;
+    transition: width 0.3s ease;
+}
+.nav-link-hover:hover::after, .nav-link.active::after {
+    width: 100%;
+}
