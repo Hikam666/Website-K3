@@ -1,169 +1,281 @@
 <!DOCTYPE html>
-
-<html lang="id"><head>
+<html lang="id">
+<head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Denah &amp; Simulasi - PTBA HSE (K3)</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="style.css"/>
 <script src="script.js"></script>
 <script src="layout.js" defer></script>
 </head>
 <body class="bg-surface text-on-surface">
-<!-- TopNavBar -->
 <div id="header-placeholder"></div>
-<!-- Hero Section -->
+
 <header class="relative w-full h-[409px] min-h-[300px] bg-primary overflow-hidden">
-<div class="absolute inset-0 bg-gradient-to-br from-primary to-primary-container opacity-90"></div>
-<img class="absolute inset-0 w-full h-full object-cover mix-blend-overlay" data-alt="Technical blueprint overlay on top of an industrial mining site at dusk with blue and orange ambient lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPx5bY4mSPXnm2Qi4IPkqj2NJQEz3iJCsnEhMWDlKlgbSnz5gSTzID21yWxEderMnDoeG2KnL_Yi7mlCpe08iwLXoAGz8GsmS0lp8uxgMvDL8bJ2Pl9pKmWsBHNpWSYvBFYqM6LYc-8DtOkiyZOo283i4Uo8TeIMF9Sja-O3ZVx9YRjO7tkYgNrvLFMkQqsfE_8OCsn00Vwj-qfV6esIQfhwYtFQWCSMV4PrAPsD4vOspFMTV0ftv97fc8wR4hKFIMxm4F8cB7dGY"/>
-<div class="relative z-10 h-full flex flex-col justify-center items-start px-12 max-w-screen-2xl mx-auto reveal-on-scroll">
-<div class="bg-tertiary-container text-white px-3 py-1 text-xs font-bold mb-4 uppercase tracking-widest">Safety Awareness</div>
-<h1 class="text-white text-5xl font-extrabold tracking-tighter mb-4 leading-none">Denah &amp; Simulasi K3</h1>
-<p class="text-primary-fixed max-w-2xl font-medium text-lg opacity-90">Visualisasi komprehensif jalur evakuasi, titik kumpul, dan prosedur simulasi darurat di area operasional PT Bukit Asam.</p>
-</div>
+  <div class="absolute inset-0 bg-gradient-to-br from-primary to-primary-container opacity-90"></div>
+  <img class="absolute inset-0 w-full h-full object-cover mix-blend-overlay"
+    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPx5bY4mSPXnm2Qi4IPkqj2NJQEz3iJCsnEhMWDlKlgbSnz5gSTzID21yWxEderMnDoeG2KnL_Yi7mlCpe08iwLXoAGz8GsmS0lp8uxgMvDL8bJ2Pl9pKmWsBHNpWSYvBFYqM6LYc-8DtOkiyZOo283i4Uo8TeIMF9Sja-O3ZVx9YRjO7tkYgNrvLFMkQqsfE_8OCsn00Vwj-qfV6esIQfhwYtFQWCSMV4PrAPsD4vOspFMTV0ftv97fc8wR4hKFIMxm4F8cB7dGY"/>
+  <div class="relative z-10 h-full flex flex-col justify-center items-start px-12 max-w-screen-2xl mx-auto reveal-on-scroll">
+    <div class="bg-tertiary-container text-white px-3 py-1 text-xs font-bold mb-4 uppercase tracking-widest">Safety Awareness</div>
+    <h1 class="text-white text-5xl font-extrabold tracking-tighter mb-4 leading-none">Denah &amp; Simulasi K3</h1>
+    <p class="text-primary-fixed max-w-2xl font-medium text-lg opacity-90">Visualisasi komprehensif tata letak area, jalur evakuasi, titik kumpul, potensi bahaya, dan prosedur simulasi darurat di area operasional PT Bukit Asam.</p>
+  </div>
 </header>
+
 <main class="max-w-screen-2xl mx-auto py-12 px-8 space-y-16">
-<!-- Section: Map & Legend -->
-<section class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-<!-- Left: Industrial Map Canvas -->
-<div class="lg:col-span-8 bg-surface-container-low p-2 rounded-none reveal-on-scroll">
-<div class="relative aspect-video bg-surface-container-high overflow-hidden shadow-sm group">
-<!-- Placeholder for Map/Blueprint -->
-<div class="absolute inset-0 bg-[#f0f2f5] flex items-center justify-center">
-<img class="w-full h-full object-cover opacity-60" data-alt="Clean minimal architectural technical blueprint of a large industrial factory layout with red safety markings" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVjnCermdx6f9eiYPUAAYhRJp1odwhvtzW0mT7FWkmtODolyAQ81JLeA2ivhaLyrxBFKIlX0JAddNm66m-F6pGwiyDQjOnTIDWeu_i0mTvRKKZubcKqvgOPU41ja65l_PT-pAO2BrmJevsCIt9FN3ncv-S2bEbXsONUXgchsTOw3lJ6rirJnz8ARPBX4f58W0S0ynhCcRbuP7QBmnz8TIoGAaJYZ4C5JXc0vt0GCVdkyjsXR2SMC19dqVfk2hD8wHKdVYlpfL1dBk"/>
-<div class="absolute inset-0 bg-primary/5 pointer-events-none"></div>
-<!-- Evacuation Route Mockup Layers -->
-<div class="absolute top-1/4 left-1/4 w-32 h-1 bg-on-tertiary-container rotate-45 animate-pulse shadow-[0_0_10px_rgba(234,128,0,0.5)]"></div>
-<div class="absolute top-[35%] left-[35%] w-16 h-1 bg-on-tertiary-container -rotate-12 animate-pulse"></div>
-<!-- Interactive Pins -->
-<div class="absolute top-1/3 left-1/2 group-hover:scale-125 transition-transform duration-300 drop-shadow-md cursor-pointer z-20">
-<span class="material-symbols-outlined text-on-tertiary-container text-4xl" style="font-variation-settings: 'FILL' 1;">location_on</span>
-<div class="absolute -top-8 left-1/2 -translate-x-1/2 bg-on-surface text-white text-[10px] px-2 py-1 whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">Titik Kumpul Alpha</div>
-</div>
-<div class="absolute bottom-1/4 right-1/3 hover:scale-125 transition-transform duration-300 cursor-pointer drop-shadow-md z-20">
-<span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">fire_extinguisher</span>
-</div>
-</div>
-<!-- Map Controls -->
-<div class="absolute bottom-4 right-4 flex flex-col gap-2">
-<button class="bg-surface-container-lowest p-2 shadow-md hover:bg-surface-bright"><span class="material-symbols-outlined">add</span></button>
-<button class="bg-surface-container-lowest p-2 shadow-md hover:bg-surface-bright"><span class="material-symbols-outlined">remove</span></button>
-<button class="bg-surface-container-lowest p-2 shadow-md hover:bg-surface-bright"><span class="material-symbols-outlined">layers</span></button>
-</div>
-<div class="absolute top-4 left-4 bg-surface-container-lowest/90 backdrop-blur-md px-4 py-2 border-l-4 border-on-tertiary-container">
-<span class="text-xs font-bold text-on-surface block">LOKASI SAAT INI</span>
-<span class="text-sm font-semibold text-primary">Pit Tambang Air Laya Utara</span>
-</div>
-</div>
-</div>
-<!-- Right: Details/Legend -->
-<div class="lg:col-span-4 space-y-6 reveal-on-scroll delay-100">
-<div class="border-b-2 border-primary-container pb-4">
-<h2 class="text-2xl font-extrabold text-primary tracking-tight">Katalog Fasilitas K3</h2>
-<p class="text-sm text-on-surface-variant font-medium">Informasi vital evakuasi dan pencegahan.</p>
-</div>
-<div class="space-y-4">
-<!-- Item 1 -->
-<div class="bg-surface-container-lowest p-5 rounded-xl transition-all hover:bg-surface-bright hover:-translate-x-2 hover:shadow-md border-l-4 border-on-tertiary-container shadow-sm">
-<div class="flex gap-4 items-start">
-<div class="p-3 bg-tertiary-fixed rounded-xl text-on-tertiary-container">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">directions_run</span>
-</div>
-<div>
-<h3 class="font-bold text-on-surface text-base">Jalur Evakuasi</h3>
-<p class="text-sm text-on-surface-variant mt-1 leading-relaxed">Garis jingga pada denah menunjukkan rute teraman menuju area terbuka.</p>
-</div>
-</div>
-</div>
-<!-- Item 2 -->
-<div class="bg-surface-container-lowest p-5 rounded-xl transition-all hover:bg-surface-bright hover:-translate-x-2 hover:shadow-md border-l-4 border-primary shadow-sm">
-<div class="flex gap-4 items-start">
-<div class="p-3 bg-primary-fixed rounded-xl text-primary">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">groups</span>
-</div>
-<div>
-<h3 class="font-bold text-on-surface text-base">Titik Kumpul (Assembly Point)</h3>
-<p class="text-sm text-on-surface-variant mt-1 leading-relaxed">Terdapat 4 titik kumpul utama yang tersebar di area Pit &amp; Perkantoran.</p>
-</div>
-</div>
-</div>
-<!-- Item 3 -->
-<div class="bg-surface-container-lowest p-5 rounded-xl transition-all hover:bg-surface-bright hover:-translate-x-2 hover:shadow-md border-l-4 border-error shadow-sm">
-<div class="flex gap-4 items-start">
-<div class="p-3 bg-error-container rounded-xl text-on-error-container">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">fire_extinguisher</span>
-</div>
-<div>
-<h3 class="font-bold text-on-surface text-base">Lokasi APAR</h3>
-<p class="text-sm text-on-surface-variant mt-1 leading-relaxed">Unit pemadam api ringan tersedia setiap 20 meter di area koridor utama.</p>
-</div>
-</div>
-</div>
-</div>
-<button class="w-full bg-primary text-on-primary py-4 font-bold flex items-center justify-center gap-2 hover:bg-primary-container hover:scale-[1.02] active:scale-[0.98] transition-all shadow-md">
-<span class="material-symbols-outlined">download</span>
-                    UNDUH DENAH PDF (HIGH-RES)
-                </button>
-</div>
-</section>
-<!-- Section: P3K Simulation -->
-<section class="bg-surface-container-low rounded-none overflow-hidden border-t-8 border-primary reveal-on-scroll hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
-<!-- Left: Video Placeholder -->
-<div class="relative bg-black aspect-video flex items-center justify-center group overflow-hidden">
-<img class="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:scale-105 transition-transform duration-700" data-alt="Health and safety training simulation video frame showing medics performing CPR on a training dummy in an industrial setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWRtCWAJqgGa3Q8H-yg45K6ocPQOe0xePz52QDtpjDoJoMMXUzNysXPfrB4mEfEizAm2fj68l97tXxvdGoLiEFH9V92BEssMwkjOdBTGXojwqnklKlMkPFzigD8EUH1iAaJCOcRhJbRsE2PfUWppVYUxRlo-QHhRP-yhgKh6MJljuZ5qA5ovB342J-CAXr06H4Tr1t8fKCNZqRdfUbskZv5I3Mrk8H3x4Cg8OQye27FUTfg2PEwlxWA7NGckCnIGUpdRYj4IX4FfU"/>
-<div class="z-10 flex flex-col items-center">
-<button class="w-20 h-20 bg-on-tertiary-container text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
-</button>
-<p class="text-white font-bold mt-4 tracking-widest text-sm uppercase">Putar Simulasi P3K</p>
-</div>
-<div class="absolute bottom-4 left-6 text-white/70 text-xs font-medium">
-                        Durasi: 04:25 | Modul: Tanggap Darurat Medis
-                    </div>
-</div>
-<!-- Right: Emergency Response Steps -->
-<div class="p-12 flex flex-col justify-center">
-<div class="mb-8">
-<span class="text-on-tertiary-container font-bold text-sm tracking-widest uppercase mb-2 block">Instructional Guide</span>
-<h2 class="text-3xl font-extrabold text-primary tracking-tighter">Langkah Penanganan Darurat</h2>
-</div>
-<div class="space-y-6">
-<div class="flex gap-6">
-<div class="flex-none w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-sm">1</div>
-<div>
-<p class="font-bold text-on-surface">Amankan Area Sekitar</p>
-<p class="text-sm text-on-surface-variant">Pastikan lokasi kejadian aman dari bahaya lanjutan (listrik, api, atau gas).</p>
-</div>
-</div>
-<div class="flex gap-6">
-<div class="flex-none w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-sm">2</div>
-<div>
-<p class="font-bold text-on-surface">Cek Kesadaran Korban</p>
-<p class="text-sm text-on-surface-variant">Panggil korban dengan lantang dan tepuk bahu untuk melihat respon.</p>
-</div>
-</div>
-<div class="flex gap-6">
-<div class="flex-none w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-sm">3</div>
-<div>
-<p class="font-bold text-on-surface">Hubungi Tim Medis (K3 Line)</p>
-<p class="text-sm text-on-surface-variant">Segera tekan tombol darurat atau hubungi ekstensi 112 dari pesawat telepon terdekat.</p>
-</div>
-</div>
-<div class="flex gap-6">
-<div class="flex-none w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-sm">4</div>
-<div>
-<p class="font-bold text-on-surface">Lakukan Pertolongan Pertama</p>
-<p class="text-sm text-on-surface-variant">Berikan tindakan sesuai prosedur simulasi hingga tim medis tiba di lokasi.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
+
+  <!-- Section: Map & Legend -->
+  <section class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+    <!-- Left: Industrial Map Canvas -->
+    <div class="lg:col-span-8 bg-surface-container-low p-2 rounded-none reveal-on-scroll">
+      <div class="relative aspect-video bg-surface-container-high overflow-hidden shadow-sm group">
+        <div class="absolute inset-0 bg-[#f0f2f5] flex items-center justify-center">
+          <img class="w-full h-full object-cover opacity-60"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVjnCermdx6f9eiYPUAAYhRJp1odwhvtzW0mT7FWkmtODolyAQ81JLeA2ivhaLyrxBFKIlX0JAddNm66m-F6pGwiyDQjOnTIDWeu_i0mTvRKKZubcKqvgOPU41ja65l_PT-pAO2BrmJevsCIt9FN3ncv-S2bEbXsONUXgchsTOw3lJ6rirJnz8ARPBX4f58W0S0ynhCcRbuP7QBmnz8TIoGAaJYZ4C5JXc0vt0GCVdkyjsXR2SMC19dqVfk2hD8wHKdVYlpfL1dBk"/>
+          <div class="absolute inset-0 bg-primary/5 pointer-events-none"></div>
+
+          <!-- Evacuation Route Lines -->
+          <div class="absolute top-1/4 left-1/4 w-32 h-1 bg-on-tertiary-container rotate-45 animate-pulse shadow-[0_0_10px_rgba(234,128,0,0.5)]"></div>
+          <div class="absolute top-[35%] left-[35%] w-16 h-1 bg-on-tertiary-container -rotate-12 animate-pulse"></div>
+
+          <!-- Pin: Titik Kumpul Alpha -->
+          <div class="absolute top-1/3 left-1/2 group-hover:scale-125 transition-transform duration-300 drop-shadow-md cursor-pointer z-20">
+            <span class="material-symbols-outlined text-on-tertiary-container text-4xl" style="font-variation-settings: 'FILL' 1;">location_on</span>
+            <div class="absolute -top-8 left-1/2 -translate-x-1/2 bg-on-surface text-white text-[10px] px-2 py-1 whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">Titik Kumpul Alpha</div>
+          </div>
+
+          <!-- Pin: APAR -->
+          <div class="absolute bottom-1/4 right-1/3 hover:scale-125 transition-transform duration-300 cursor-pointer drop-shadow-md z-20">
+            <span class="material-symbols-outlined text-error text-3xl" style="font-variation-settings: 'FILL' 1;">fire_extinguisher</span>
+          </div>
+
+          <!-- Pin: Pos APD -->
+          <div class="absolute top-1/4 left-1/6 hover:scale-125 transition-transform duration-300 cursor-pointer drop-shadow-md z-20">
+            <span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">hard_hat</span>
+          </div>
+
+          <!-- Pin: HSE Room -->
+          <div class="absolute bottom-1/3 left-1/2 hover:scale-125 transition-transform duration-300 cursor-pointer drop-shadow-md z-20">
+            <span class="material-symbols-outlined text-secondary text-3xl" style="font-variation-settings: 'FILL' 1;">medical_services</span>
+          </div>
+        </div>
+
+        <!-- Map Controls -->
+        <div class="absolute bottom-4 right-4 flex flex-col gap-2">
+          <button class="bg-surface-container-lowest p-2 shadow-md hover:bg-surface-bright"><span class="material-symbols-outlined">add</span></button>
+          <button class="bg-surface-container-lowest p-2 shadow-md hover:bg-surface-bright"><span class="material-symbols-outlined">remove</span></button>
+          <button class="bg-surface-container-lowest p-2 shadow-md hover:bg-surface-bright"><span class="material-symbols-outlined">layers</span></button>
+        </div>
+
+        <div class="absolute top-4 left-4 bg-surface-container-lowest/90 backdrop-blur-md px-4 py-2 border-l-4 border-on-tertiary-container">
+          <span class="text-xs font-bold text-on-surface block">LOKASI SAAT INI</span>
+          <span class="text-sm font-semibold text-primary">Pit Tambang Air Laya Utara - PTBA</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Details/Legend -->
+    <div class="lg:col-span-4 space-y-6 reveal-on-scroll delay-100">
+      <div class="border-b-2 border-primary-container pb-4">
+        <h2 class="text-2xl font-extrabold text-primary tracking-tight">Katalog Fasilitas K3</h2>
+        <p class="text-sm text-on-surface-variant font-medium">Informasi vital evakuasi, pencegahan, dan keselamatan.</p>
+      </div>
+      <div class="space-y-4">
+        <div class="bg-surface-container-lowest p-5 rounded-xl transition-all hover:bg-surface-bright hover:-translate-x-2 hover:shadow-md border-l-4 border-on-tertiary-container shadow-sm">
+          <div class="flex gap-4 items-start">
+            <div class="p-3 bg-tertiary-fixed rounded-xl text-on-tertiary-container">
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">directions_run</span>
+            </div>
+            <div>
+              <h3 class="font-bold text-on-surface text-base">Jalur Evakuasi</h3>
+              <p class="text-sm text-on-surface-variant mt-1 leading-relaxed">Garis jingga pada denah menunjukkan rute teraman menuju area terbuka (muster point).</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-surface-container-lowest p-5 rounded-xl transition-all hover:bg-surface-bright hover:-translate-x-2 hover:shadow-md border-l-4 border-primary shadow-sm">
+          <div class="flex gap-4 items-start">
+            <div class="p-3 bg-primary-fixed rounded-xl text-primary">
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">groups</span>
+            </div>
+            <div>
+              <h3 class="font-bold text-on-surface text-base">Titik Kumpul (Assembly Point)</h3>
+              <p class="text-sm text-on-surface-variant mt-1 leading-relaxed">Terdapat 4 titik kumpul utama tersebar di area Pit, Perkantoran, Bengkel, dan Parkir.</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-surface-container-lowest p-5 rounded-xl transition-all hover:bg-surface-bright hover:-translate-x-2 hover:shadow-md border-l-4 border-error shadow-sm">
+          <div class="flex gap-4 items-start">
+            <div class="p-3 bg-error-container rounded-xl text-on-error-container">
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">fire_extinguisher</span>
+            </div>
+            <div>
+              <h3 class="font-bold text-on-surface text-base">Lokasi APAR</h3>
+              <p class="text-sm text-on-surface-variant mt-1 leading-relaxed">Unit pemadam api ringan tersedia setiap 20 meter di area koridor dan produksi utama.</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-surface-container-lowest p-5 rounded-xl transition-all hover:bg-surface-bright hover:-translate-x-2 hover:shadow-md border-l-4 border-secondary shadow-sm">
+          <div class="flex gap-4 items-start">
+            <div class="p-3 bg-secondary-container rounded-xl text-on-secondary-container">
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">medical_services</span>
+            </div>
+            <div>
+              <h3 class="font-bold text-on-surface text-base">Ruang K3 / HSE Room (D)</h3>
+              <p class="text-sm text-on-surface-variant mt-1 leading-relaxed">Pusat komando pengawasan keselamatan kerja, penanganan medis, dan koordinasi darurat.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="w-full bg-primary text-on-primary py-4 font-bold flex items-center justify-center gap-2 hover:bg-primary-container hover:scale-[1.02] active:scale-[0.98] transition-all shadow-md">
+        <span class="material-symbols-outlined">download</span>
+        UNDUH DENAH PDF (HIGH-RES)
+      </button>
+    </div>
+  </section>
+
+  <!-- Potensi Bahaya Per Area -->
+  <section class="reveal-on-scroll">
+    <div class="mb-8">
+      <h2 class="text-3xl font-extrabold text-primary tracking-tight font-headline mb-2">Analisis Potensi Bahaya Per Area</h2>
+      <p class="text-on-surface-variant">Identifikasi risiko berdasarkan denah PT Bukit Asam Tbk untuk pengendalian bahaya yang tepat sasaran.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div class="bg-surface-container-lowest p-6 rounded-xl border-t-4 border-error hover:-translate-y-1 hover:shadow-lg transition-all">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="material-symbols-outlined text-error text-2xl" style="font-variation-settings: 'FILL' 1;">warning</span>
+          <h3 class="font-bold text-primary">Area Tambang / Operasional</h3>
+        </div>
+        <ul class="space-y-1 text-sm text-on-surface-variant">
+          <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-error rounded-full"></span>Kecelakaan alat berat (excavator, dump truck)</li>
+          <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-error rounded-full"></span>Paparan debu batubara (PM10)</li>
+          <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-error rounded-full"></span>Kebisingan tinggi alat berat</li>
+          <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-error rounded-full"></span>Gas berbahaya dari proses tambang</li>
+        </ul>
+      </div>
+      <div class="bg-surface-container-lowest p-6 rounded-xl border-t-4 border-on-tertiary-container hover:-translate-y-1 hover:shadow-lg transition-all">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="material-symbols-outlined text-on-tertiary-container text-2xl" style="font-variation-settings: 'FILL' 1;">factory</span>
+          <h3 class="font-bold text-primary">Area Produksi &amp; Conveyor</h3>
+        </div>
+        <ul class="space-y-1 text-sm text-on-surface-variant">
+          <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-on-tertiary-container rounded-full"></span>Bahaya mesin conveyor (emergency stop wajib)</li>
+          <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-on-tertiary-container rounded-full"></span>Suhu lingkungan yang tinggi</li>
+          <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-on-tertiary-container rounded-full"></span>Debu batubara dari proses stockpile</li>
+        </ul>
+      </div>
+      <div class="bg-surface-container-lowest p-6 rounded-xl border-t-4 border-secondary hover:-translate-y-1 hover:shadow-lg transition-all">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="material-symbols-outlined text-secondary text-2xl" style="font-variation-settings: 'FILL' 1;">science</span>
+          <h3 class="font-bold text-primary">Laboratorium (C)</h3>
+        </div>
+        <ul class="space-y-1 text-sm text-on-surface-variant">
+          <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-secondary rounded-full"></span>Bahan kimia berbahaya (reaktif, korosif)</li>
+          <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-secondary rounded-full"></span>Paparan reagen uji kualitas batubara</li>
+          <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-secondary rounded-full"></span>Tumpahan bahan kimia laboratorium</li>
+        </ul>
+      </div>
+      <div class="bg-surface-container-lowest p-6 rounded-xl border-t-4 border-primary hover:-translate-y-1 hover:shadow-lg transition-all">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="material-symbols-outlined text-primary text-2xl" style="font-variation-settings: 'FILL' 1;">build</span>
+          <h3 class="font-bold text-primary">Bengkel Maintenance</h3>
+        </div>
+        <ul class="space-y-1 text-sm text-on-surface-variant">
+          <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-primary rounded-full"></span>Percikan api las dan gerinda</li>
+          <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-primary rounded-full"></span>Alat tajam dan benda berputar</li>
+          <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-primary rounded-full"></span>Tumpahan bahan bakar dan oli mesin</li>
+        </ul>
+      </div>
+      <div class="bg-surface-container-lowest p-6 rounded-xl border-t-4 border-outline hover:-translate-y-1 hover:shadow-lg transition-all">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="material-symbols-outlined text-outline text-2xl" style="font-variation-settings: 'FILL' 1;">apartment</span>
+          <h3 class="font-bold text-primary">Kantor Utama (E/F)</h3>
+        </div>
+        <ul class="space-y-1 text-sm text-on-surface-variant">
+          <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-outline rounded-full"></span>Bahaya ergonomi (posisi duduk komputer)</li>
+          <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-outline rounded-full"></span>Stres kerja dan beban kerja berlebih</li>
+          <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-outline rounded-full"></span>Kebakaran instalasi listrik</li>
+        </ul>
+      </div>
+      <div class="bg-surface-container-lowest p-6 rounded-xl border-t-4 border-tertiary-container hover:-translate-y-1 hover:shadow-lg transition-all">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="material-symbols-outlined text-tertiary-container text-2xl" style="font-variation-settings: 'FILL' 1;">hotel</span>
+          <h3 class="font-bold text-primary">Mess Karyawan (F)</h3>
+        </div>
+        <ul class="space-y-1 text-sm text-on-surface-variant">
+          <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-tertiary-container rounded-full"></span>Penyakit menular antar penghuni</li>
+          <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-tertiary-container rounded-full"></span>Lingkungan kurang higienis</li>
+          <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-tertiary-container rounded-full"></span>Kontaminasi mikroorganisme pada fasilitas</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- P3K Simulation Section -->
+  <section class="bg-surface-container-low rounded-none overflow-hidden border-t-8 border-primary reveal-on-scroll hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
+      <!-- Left: YouTube Embed -->
+      <div class="relative bg-black aspect-video overflow-hidden">
+        <iframe
+          class="absolute inset-0 w-full h-full"
+          src="https://www.youtube.com/embed/OsBvThrg4lk"
+          title="Simulasi P3K - Tanggap Darurat K3 PT Bukit Asam"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <!-- Right: Emergency Response Steps -->
+      <div class="p-12 flex flex-col justify-center">
+        <div class="mb-8">
+          <span class="text-on-tertiary-container font-bold text-sm tracking-widest uppercase mb-2 block">Instructional Guide</span>
+          <h2 class="text-3xl font-extrabold text-primary tracking-tighter">Langkah Penanganan Darurat</h2>
+          <p class="text-sm text-on-surface-variant mt-2">Prosedur tanggap darurat sesuai protokol K3 PT Bukit Asam</p>
+        </div>
+        <div class="space-y-6">
+          <div class="flex gap-6">
+            <div class="flex-none w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-sm">1</div>
+            <div>
+              <p class="font-bold text-on-surface">Amankan Area Sekitar</p>
+              <p class="text-sm text-on-surface-variant">Pastikan lokasi kejadian aman dari bahaya lanjutan seperti listrik, api, gas, atau alat berat yang bergerak.</p>
+            </div>
+          </div>
+          <div class="flex gap-6">
+            <div class="flex-none w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-sm">2</div>
+            <div>
+              <p class="font-bold text-on-surface">Cek Kesadaran Korban</p>
+              <p class="text-sm text-on-surface-variant">Panggil korban dengan lantang dan tepuk bahu untuk melihat respons. Jangan pindahkan korban jika dicurigai cedera tulang belakang.</p>
+            </div>
+          </div>
+          <div class="flex gap-6">
+            <div class="flex-none w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-sm">3</div>
+            <div>
+              <p class="font-bold text-on-surface">Hubungi Tim Medis K3</p>
+              <p class="text-sm text-on-surface-variant">Segera tekan tombol darurat atau hubungi <strong class="text-on-tertiary-container">ekstensi 112</strong> dari pesawat telepon terdekat. HSE Room (D) siaga 24 jam.</p>
+            </div>
+          </div>
+          <div class="flex gap-6">
+            <div class="flex-none w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-sm">4</div>
+            <div>
+              <p class="font-bold text-on-surface">Lakukan Pertolongan Pertama (P3K)</p>
+              <p class="text-sm text-on-surface-variant">Berikan tindakan P3K sesuai prosedur simulasi hingga tim medis tiba. Gunakan kotak P3K yang tersedia di setiap area kerja.</p>
+            </div>
+          </div>
+          <div class="flex gap-6">
+            <div class="flex-none w-8 h-8 rounded-full bg-tertiary-container text-white flex items-center justify-center font-bold text-sm">5</div>
+            <div>
+              <p class="font-bold text-on-surface">Evakuasi ke Titik Kumpul</p>
+              <p class="text-sm text-on-surface-variant">Pandu seluruh personil menuju salah satu dari 4 titik kumpul (Assembly Point) yang telah ditentukan pada denah.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </main>
-<!-- Footer -->
 <div id="footer-placeholder"></div>
-</body></html>
+</body>
+</html>
