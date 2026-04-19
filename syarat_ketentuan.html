@@ -1,118 +1,144 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Syarat & Ketentuan - PTBA HSE</title>
 
-<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
 
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css"/>
 <script src="layout.js" defer></script>
 
 <style>
-  body { font-family: 'Inter', sans-serif; }
-  h1,h2,h3 { font-family: 'Manrope', sans-serif; }
+body { font-family: 'Inter', sans-serif; }
+h1,h2,h3 { font-family: 'Manrope', sans-serif; }
 </style>
-
 </head>
 
 <body class="bg-gray-50 text-gray-800">
 
 <div id="header-placeholder"></div>
 
+<main>
+
 <!-- HERO -->
-<section class="relative h-[380px] flex items-center overflow-hidden">
-
+<section class="relative h-[420px] flex items-center overflow-hidden">
   <img src="https://images.unsplash.com/photo-1523958203904-cdcb402031fd?q=80&w=2070"
-       class="absolute inset-0 w-full h-full object-cover"/>
+       class="absolute inset-0 w-full h-full object-cover scale-110"/>
 
-  <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40"></div>
+  <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-transparent"></div>
 
-  <div class="relative z-10 max-w-6xl mx-auto px-8">
-    <p class="uppercase tracking-widest text-sm text-gray-300 mb-3">
-      PT Bukit Asam - HSE System
-    </p>
-    <h1 class="text-5xl font-extrabold text-white">Syarat & Ketentuan</h1>
+  <div class="container mx-auto px-8 relative z-10">
+    <div class="max-w-2xl">
+      <p class="text-sm uppercase tracking-widest text-primary font-semibold mb-3">
+        Operational Compliance
+      </p>
+      <h1 class="text-white text-5xl font-extrabold leading-tight">
+        Syarat & Ketentuan K3
+      </h1>
+      <p class="text-gray-200 mt-5 text-lg">
+        Kepatuhan terhadap K3 merupakan bagian dari tanggung jawab profesional
+        dalam menjaga keselamatan operasional dan keberlanjutan perusahaan.
+      </p>
+    </div>
   </div>
-
 </section>
 
-<!-- CONTENT -->
-<section class="py-24 px-6">
+<!-- INTRO -->
+<section class="py-24">
+<div class="container mx-auto px-8 max-w-6xl space-y-16">
 
-  <div class="max-w-5xl mx-auto space-y-8">
+  <div class="bg-white p-12 rounded-2xl shadow-md border border-gray-100 reveal-on-scroll">
+    <h2 class="text-2xl font-bold text-primary mb-6">
+      Kepatuhan dalam K3
+    </h2>
+    <p class="text-gray-600 leading-relaxed text-lg">
+      Setiap pengguna sistem memiliki tanggung jawab untuk menjaga keselamatan diri,
+      rekan kerja, serta lingkungan operasional dengan mematuhi seluruh prosedur
+      keselamatan dan kesehatan kerja (K3).
+    </p>
 
-    <!-- INTRO CARD -->
-    <div class="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
-      <p class="text-gray-600 leading-relaxed">
-        Dengan mengakses dan menggunakan sistem ini, pengguna dianggap telah membaca,
-        memahami, dan menyetujui seluruh syarat dan ketentuan yang berlaku dalam sistem
-        K3 PT Bukit Asam.
+    <div class="mt-6 border-l-4 border-primary pl-6 text-gray-500">
+      Kepatuhan bukan pilihan, tetapi standar kerja profesional.
+    </div>
+  </div>
+
+  <!-- GRID -->
+  <div class="grid md:grid-cols-3 gap-10">
+
+    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg transition reveal-on-scroll">
+      <div class="flex items-center gap-3 mb-4">
+        <span class="material-symbols-outlined text-primary text-3xl">rule</span>
+        <h3 class="font-bold text-lg">Kepatuhan SOP</h3>
+      </div>
+      <p class="text-gray-600 text-sm leading-relaxed">
+        Seluruh aktivitas kerja wajib mengikuti prosedur operasional standar (SOP)
+        yang telah ditetapkan untuk menjamin keselamatan dan konsistensi operasional.
       </p>
     </div>
 
-    <!-- GRID CARDS -->
-    <div class="grid md:grid-cols-2 gap-6">
-
-      <!-- 1 -->
-      <div class="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm hover:shadow-xl transition">
-        <span class="text-sm text-gray-400 font-semibold">01</span>
-        <h3 class="text-lg font-bold mt-2 mb-3">Penggunaan Sistem</h3>
-        <p class="text-gray-600 text-sm leading-relaxed">
-          Sistem digunakan untuk edukasi, simulasi, dan peningkatan kesadaran
-          keselamatan dan kesehatan kerja (K3).
-        </p>
+    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg transition reveal-on-scroll delay-100">
+      <div class="flex items-center gap-3 mb-4">
+        <span class="material-symbols-outlined text-primary text-3xl">health_and_safety</span>
+        <h3 class="font-bold text-lg">Penggunaan APD</h3>
       </div>
+      <p class="text-gray-600 text-sm leading-relaxed">
+        Penggunaan Alat Pelindung Diri (APD) merupakan kewajiban utama dalam
+        meminimalisir risiko kecelakaan kerja di seluruh area operasional.
+      </p>
+    </div>
 
-      <!-- 2 -->
-      <div class="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm hover:shadow-xl transition">
-        <span class="text-sm text-gray-400 font-semibold">02</span>
-        <h3 class="text-lg font-bold mt-2 mb-3">Kewajiban Pengguna</h3>
-        <ul class="text-gray-600 text-sm space-y-2 list-disc ml-5">
-          <li>Menggunakan sistem secara bertanggung jawab</li>
-          <li>Tidak menyalahgunakan data</li>
-          <li>Mematuhi peraturan yang berlaku</li>
-        </ul>
+    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg transition reveal-on-scroll delay-200">
+      <div class="flex items-center gap-3 mb-4">
+        <span class="material-symbols-outlined text-primary text-3xl">warning</span>
+        <h3 class="font-bold text-lg">Larangan Operasional</h3>
       </div>
-
-      <!-- 3 -->
-      <div class="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm hover:shadow-xl transition">
-        <span class="text-sm text-gray-400 font-semibold">03</span>
-        <h3 class="text-lg font-bold mt-2 mb-3">Larangan</h3>
-        <ul class="text-gray-600 text-sm space-y-2 list-disc ml-5">
-          <li>Aktivitas ilegal atau merugikan pihak lain</li>
-          <li>Manipulasi sistem</li>
-          <li>Akses data tanpa izin</li>
-        </ul>
-      </div>
-
-      <!-- 4 -->
-      <div class="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm hover:shadow-xl transition">
-        <span class="text-sm text-gray-400 font-semibold">04</span>
-        <h3 class="text-lg font-bold mt-2 mb-3">Tanggung Jawab</h3>
-        <p class="text-gray-600 text-sm leading-relaxed">
-          Perusahaan tidak bertanggung jawab atas kerugian akibat penyalahgunaan
-          sistem oleh pengguna.
-        </p>
-      </div>
-
-      <!-- 5 -->
-      <div class="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm hover:shadow-xl transition md:col-span-2">
-        <span class="text-sm text-gray-400 font-semibold">05</span>
-        <h3 class="text-lg font-bold mt-2 mb-3">Perubahan Ketentuan</h3>
-        <p class="text-gray-600 text-sm leading-relaxed">
-          Syarat dan ketentuan dapat diperbarui sewaktu-waktu sesuai kebutuhan
-          perusahaan tanpa pemberitahuan sebelumnya.
-        </p>
-      </div>
-
+      <p class="text-gray-600 text-sm leading-relaxed">
+        Dilarang melakukan tindakan yang melanggar prosedur keselamatan,
+        mengabaikan standar kerja, atau membahayakan lingkungan operasional.
+      </p>
     </div>
 
   </div>
 
+</div>
 </section>
+
+<!-- SECTION 2 -->
+<section class="py-24 bg-white border-t">
+<div class="container mx-auto px-8 max-w-4xl">
+
+  <h2 class="text-primary text-3xl font-bold mb-8">
+    Keselamatan sebagai Prioritas Utama
+  </h2>
+
+  <div class="space-y-6 text-gray-600 leading-relaxed">
+    <p>
+      Setiap aktivitas kerja di lingkungan PT Bukit Asam wajib menjadikan
+      keselamatan sebagai prioritas utama dalam setiap pengambilan keputusan.
+    </p>
+    <p>
+      Pelanggaran terhadap prinsip K3 dapat berdampak pada risiko kecelakaan serius,
+      kerugian operasional, serta konsekuensi hukum dan reputasi perusahaan.
+    </p>
+    <p>
+      Oleh karena itu, kepatuhan terhadap sistem ini merupakan bagian dari tanggung jawab
+      profesional yang tidak dapat diabaikan oleh setiap individu di lingkungan kerja.
+    </p>
+  </div>
+
+  <div class="mt-10 border-l-4 border-primary pl-6 text-gray-500">
+    Zero accident dimulai dari disiplin individu.
+  </div>
+
+</div>
+</section>
+
+</main>
 
 <div id="footer-placeholder"></div>
 

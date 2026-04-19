@@ -1,97 +1,181 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
 <title>Kebijakan Privasi - PTBA HSE</title>
 
-<script src="https://cdn.tailwindcss.com"></script>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<script src="layout.js" defer></script>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
 
+<link rel="stylesheet" href="style.css"/>
+<script src="layout.js" defer></script>
 </head>
+
 <body class="bg-surface text-on-surface">
 
 <div id="header-placeholder"></div>
 
-<!-- HERO -->
-<section class="relative h-[420px] flex items-center overflow-hidden">
+<main>
 
-  <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=2070"
-       class="absolute inset-0 w-full h-full object-cover"/>
+<!-- HERO (UPGRADE) -->
+<section class="relative min-h-[60vh] flex items-center overflow-hidden bg-primary">
 
-  <!-- overlay -->
-  <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40"></div>
+  <!-- IMAGE -->
+  <div class="absolute inset-0">
+    <img 
+      class="w-full h-full object-cover brightness-50 contrast-125"
+      src="https://images.unsplash.com/photo-1581094794329-c8112a89af12"
+    />
 
-  <!-- content -->
-  <div class="relative z-10 max-w-6xl mx-auto px-8">
-    <p class="uppercase tracking-widest text-sm text-gray-300 mb-3">PT Bukit Asam - HSE System</p>
-    <h1 class="text-5xl font-extrabold text-white leading-tight mb-4">
-      Kebijakan Privasi
-    </h1>
-    <p class="text-gray-300 max-w-xl text-lg">
-      Komitmen kami dalam melindungi dan mengelola data pengguna secara aman,
-      transparan, dan profesional.
+    <!-- DARK BLUE OVERLAY -->
+    <div class="absolute inset-0 bg-primary/85"></div>
+
+    <!-- GRADIENT DEPTH -->
+    <div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/90 to-transparent"></div>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="relative z-10 max-w-screen-2xl mx-auto px-8 reveal-on-scroll">
+    <div class="max-w-2xl">
+
+      <!-- BADGE -->
+      <div class="inline-flex items-center gap-2 mb-6 px-4 py-1.5 bg-white/10 backdrop-blur-md border-l-4 border-white/70">
+        <span class="material-symbols-outlined text-white">shield</span>
+        <span class="text-xs font-bold uppercase tracking-widest text-white/90">
+          Data Governance
+        </span>
+      </div>
+
+      <!-- TITLE -->
+      <h1 class="text-white text-5xl md:text-6xl font-extrabold leading-tight tracking-tight">
+        Kebijakan Privasi
+      </h1>
+
+      <!-- DESC -->
+      <p class="text-white/80 mt-6 text-lg leading-relaxed">
+        Pengelolaan data sebagai bagian dari sistem pengendalian risiko dan keselamatan kerja.
+      </p>
+
+    </div>
+  </div>
+
+</section>
+
+<!-- NARASI -->
+<section class="py-24 px-8 bg-surface">
+<div class="max-w-screen-2xl mx-auto">
+
+  <div class="max-w-3xl mb-16 reveal-on-scroll">
+    <h2 class="text-primary text-3xl font-bold mb-4">Peran Data dalam Sistem K3</h2>
+    <p class="text-on-surface-variant leading-relaxed">
+      Dalam industri pertambangan, data memiliki peran strategis dalam menjaga keselamatan kerja.
+      Setiap informasi yang dikumpulkan tidak hanya digunakan sebagai dokumentasi,
+      tetapi juga sebagai dasar dalam pengambilan keputusan untuk mencegah kecelakaan,
+      mengurangi risiko operasional, dan meningkatkan efisiensi kerja.
     </p>
   </div>
 
-</section>
+  <!-- CARD GRID (UPGRADE) -->
+  <div class="grid md:grid-cols-3 gap-8">
 
-<!-- CONTENT -->
-<section class="py-24 px-6">
-
-  <div class="max-w-5xl mx-auto">
-
-    <!-- intro -->
-    <div class="mb-12">
-      <h2 class="text-2xl font-bold mb-3">Ringkasan Kebijakan</h2>
-      <p class="text-gray-600 max-w-2xl">
-        Kebijakan ini menjelaskan bagaimana data pengguna dikumpulkan,
-        digunakan, dan dilindungi dalam sistem K3 PT Bukit Asam.
+    <div class="bg-surface-container-lowest p-10 rounded-xl shadow-[0_32px_64px_-16px_rgba(24,28,30,0.08)] 
+                hover:-translate-y-2 hover:shadow-2xl transition duration-300 reveal-on-scroll">
+      <span class="material-symbols-outlined text-primary text-4xl mb-6">monitoring</span>
+      <h3 class="font-bold text-primary mb-3">Monitoring Aktivitas</h3>
+      <p class="text-sm text-on-surface-variant leading-relaxed">
+        Data digunakan untuk memantau kepatuhan pekerja terhadap SOP,
+        penggunaan APD, dan aktivitas kerja di area berisiko tinggi.
       </p>
     </div>
 
-    <!-- divider -->
-    <div class="border-t border-gray-200 mb-12"></div>
+    <div class="bg-surface-container-lowest p-10 rounded-xl shadow-[0_32px_64px_-16px_rgba(24,28,30,0.08)] 
+                hover:-translate-y-2 hover:shadow-2xl transition duration-300 reveal-on-scroll delay-100">
+      <span class="material-symbols-outlined text-primary text-4xl mb-6">analytics</span>
+      <h3 class="font-bold text-primary mb-3">Analisis Risiko</h3>
+      <p class="text-sm text-on-surface-variant leading-relaxed">
+        Data dianalisis untuk mengidentifikasi pola kecelakaan,
+        near miss, serta potensi bahaya di lingkungan kerja.
+      </p>
+    </div>
 
-    <!-- cards -->
-    <div class="grid md:grid-cols-3 gap-8">
-
-      <!-- item -->
-      <div class="glass-card border border-gray-200 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all">
-        <div class="text-primary text-3xl mb-4"></div>
-        <h3 class="text-lg font-bold mb-2">Pengumpulan Data</h3>
-        <p class="text-gray-600 text-sm leading-relaxed">
-          Sistem mengumpulkan data aktivitas pengguna untuk keperluan analisis,
-          monitoring, serta peningkatan kualitas layanan.
-        </p>
-      </div>
-
-      <!-- item -->
-      <div class="glass-card border border-gray-200 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all">
-        <div class="text-primary text-3xl mb-4"></div>
-        <h3 class="text-lg font-bold mb-2">Penggunaan Data</h3>
-        <p class="text-gray-600 text-sm leading-relaxed">
-          Data digunakan untuk meningkatkan keamanan sistem, performa aplikasi,
-          serta memberikan pengalaman pengguna yang lebih baik.
-        </p>
-      </div>
-
-      <!-- item -->
-      <div class="glass-card border border-gray-200 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all">
-        <div class="text-primary text-3xl mb-4"></div>
-        <h3 class="text-lg font-bold mb-2">Keamanan Data</h3>
-        <p class="text-gray-600 text-sm leading-relaxed">
-          Seluruh data dilindungi menggunakan standar keamanan internal
-          perusahaan serta kontrol akses yang ketat.
-        </p>
-      </div>
-
+    <div class="bg-surface-container-lowest p-10 rounded-xl shadow-[0_32px_64px_-16px_rgba(24,28,30,0.08)] 
+                hover:-translate-y-2 hover:shadow-2xl transition duration-300 reveal-on-scroll delay-200">
+      <span class="material-symbols-outlined text-primary text-4xl mb-6">shield</span>
+      <h3 class="font-bold text-primary mb-3">Perlindungan Data</h3>
+      <p class="text-sm text-on-surface-variant leading-relaxed">
+        Informasi dilindungi melalui sistem keamanan internal dan hanya
+        diakses oleh pihak berwenang.
+      </p>
     </div>
 
   </div>
 
+</div>
 </section>
+
+<!-- SECTION 2 (UPGRADE DESIGN) -->
+<section class="py-24 px-8 bg-surface-container-low">
+<div class="max-w-screen-2xl mx-auto">
+
+  <div class="flex justify-between items-end mb-16 gap-8">
+    <div class="max-w-2xl reveal-on-scroll">
+      <h2 class="text-primary text-3xl font-bold mb-4">Prinsip Pengelolaan Data</h2>
+      <p class="text-on-surface-variant text-sm">
+        Prinsip utama dalam pengelolaan data K3 memastikan transparansi,
+        keamanan, dan kepatuhan dalam setiap aktivitas operasional.
+      </p>
+    </div>
+  </div>
+
+  <div class="grid md:grid-cols-2 gap-8">
+
+    <div class="flex items-start gap-4 p-6 bg-surface rounded-xl shadow-sm border-l-4 border-primary hover:shadow-md transition">
+      <span class="material-symbols-outlined text-primary">visibility</span>
+      <div>
+        <h4 class="font-bold text-primary text-sm">Transparansi</h4>
+        <p class="text-xs text-on-surface-variant mt-1">
+          Data digunakan secara terbuka untuk tujuan keselamatan kerja.
+        </p>
+      </div>
+    </div>
+
+    <div class="flex items-start gap-4 p-6 bg-surface rounded-xl shadow-sm border-l-4 border-secondary hover:shadow-md transition">
+      <span class="material-symbols-outlined text-secondary">verified</span>
+      <div>
+        <h4 class="font-bold text-primary text-sm">Akuntabilitas</h4>
+        <p class="text-xs text-on-surface-variant mt-1">
+          Setiap penggunaan data dapat dipertanggungjawabkan.
+        </p>
+      </div>
+    </div>
+
+    <div class="flex items-start gap-4 p-6 bg-surface rounded-xl shadow-sm border-l-4 border-tertiary hover:shadow-md transition">
+      <span class="material-symbols-outlined text-tertiary">lock</span>
+      <div>
+        <h4 class="font-bold text-primary text-sm">Keamanan</h4>
+        <p class="text-xs text-on-surface-variant mt-1">
+          Data dilindungi dari akses tidak sah.
+        </p>
+      </div>
+    </div>
+
+    <div class="flex items-start gap-4 p-6 bg-surface rounded-xl shadow-sm border-l-4 border-error hover:shadow-md transition">
+      <span class="material-symbols-outlined text-error">gavel</span>
+      <div>
+        <h4 class="font-bold text-primary text-sm">Kepatuhan</h4>
+        <p class="text-xs text-on-surface-variant mt-1">
+          Mengikuti regulasi nasional dan kebijakan perusahaan.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+</section>
+
+</main>
 
 <div id="footer-placeholder"></div>
 </body>
