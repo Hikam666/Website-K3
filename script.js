@@ -78,3 +78,38 @@ tailwind.config = {
     }
   }
 };
+document.addEventListener("DOMContentLoaded", () => {
+  const img = document.getElementById("denahImage");
+  const modal = document.getElementById("imageModal");
+  const modalImg = document.getElementById("modalImage");
+  const closeBtn = document.getElementById("closeModal");
+
+  // buka modal
+  img.addEventListener("click", () => {
+    modal.classList.remove("hidden");
+    modal.classList.add("flex");
+    modalImg.src = img.src;
+  });
+
+  // close modal (button)
+  closeBtn.addEventListener("click", () => {
+    modal.classList.add("hidden");
+    modal.classList.remove("flex");
+  });
+
+  // close modal (klik luar)
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.classList.add("hidden");
+      modal.classList.remove("flex");
+    }
+  });
+});
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll('.toggle-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const content = btn.parentElement.querySelector('.content');
+      content.classList.toggle('hidden');
+    });
+  });
+});
